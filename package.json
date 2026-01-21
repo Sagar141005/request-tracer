@@ -1,0 +1,25 @@
+{
+  "name": "request-tracer",
+  "version": "1.0.0",
+  "description": "To learn the web fundamentals, I am building this project. It will help in understanding how the request actually work under the hood.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sagar141005/request-tracer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Sagar141005/request-tracer/issues"
+  },
+  "homepage": "https://github.com/Sagar141005/request-tracer#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  }
+}
