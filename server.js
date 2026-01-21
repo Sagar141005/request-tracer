@@ -8,11 +8,10 @@ const PORT = process.env.PORT;
 app.use(express.json());
 
 app.get('/inspect', (req, res) => {
-    console.log(req.method);
-    console.log(req.headers);
-    console.log(req.url);
+    console.log(req.headers.origin);
+    console.log(req.headers.cookie);
 
-    res.json({ "ok": true });
+    res.json({ "origin": req.headers.origin, "cookies": req.headers.cookie });
 });
 
 app.listen(PORT, () => {
