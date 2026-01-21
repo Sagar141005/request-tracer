@@ -15,11 +15,13 @@
         const btn = document.getElementById('req');
         btn.addEventListener('click', () => {
             fetch("http://localhost:3000/inspect", {
-                credentials: "include"
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-Custom-Header": "test"
+                },
+                body: JSON.stringify({ test: true })
             })
-                .then(res => res.json())
-                .then(console.log)
-                .catch(console.error)
         })
     </script>
 </body>
